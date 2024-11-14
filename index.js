@@ -4,6 +4,7 @@ const cors = require("cors");
 const connectDB = require("../backend/config/db"); // Import the database connection function
 const sellerRoutes = require("../backend/routes/sellerRoutes"); // Import seller routes
 const upload = require("./middleware/multer.middleware");
+require("dotenv").config();
 
 const app = express();
 const PORT = process.env.PORT || 5000;
